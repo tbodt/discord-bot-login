@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Discord Bot Login",
+    "version": "0.1",
+
+    "content_scripts": [
+        {
+            "matches": ["https://discordapp.com/*"],
+            "js": ["inject.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        "botlogin.js"
+    ],
+    "permissions": []
+}
